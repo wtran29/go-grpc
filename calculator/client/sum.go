@@ -7,7 +7,7 @@ import (
 	pb "github.com/wtran29/go-grpc/calculator/proto"
 )
 
-func doCalculate(c pb.CalculatorServiceClient) {
+func doSum(c pb.CalculatorServiceClient) {
 	log.Println("doCalculate was invoked")
 
 	res, err := c.Sum(context.Background(), &pb.SumRequest{
